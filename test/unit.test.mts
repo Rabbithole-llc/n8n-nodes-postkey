@@ -1,4 +1,5 @@
-// Runs against the built package (dist/), as n8n loads it.
+// Runs against the built package (dist/), as n8n loads it. Tests are .mts: n8n's strict lint is for the package's own .ts
+// files (the nodes), and these are not shipped (package.json files: dist only).
 // The parts of the nodes that need no server: the Standard Webhooks check (against its published reference vector),
 // Simplify, and the retry-safe Idempotency-Key.
 

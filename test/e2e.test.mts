@@ -11,7 +11,7 @@ import { after, before, test } from 'node:test';
 
 import { Postkey } from '../dist/nodes/Postkey/Postkey.node.js';
 import { PostkeyTrigger } from '../dist/nodes/PostkeyTrigger/PostkeyTrigger.node.js';
-import { executeContext, hookContext, webhookContext, type World } from './fake.ts';
+import { executeContext, hookContext, webhookContext, type World } from './fake.mts';
 
 const BASE = process.env.POSTKEY_E2E_BASE?.replace(/\/+$/, '');
 const KEY = process.env.POSTKEY_E2E_KEY?.trim();
