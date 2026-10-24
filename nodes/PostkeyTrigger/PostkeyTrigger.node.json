@@ -1,0 +1,10 @@
+{
+	"node": "n8n-nodes-postkey.postkeyTrigger",
+	"nodeVersion": "1.0",
+	"codexVersion": "1.0",
+	"categories": ["Marketing & Content", "Communication"],
+	"resources": {
+		"credentialDocumentation": [{ "url": "https://postkey.pro/docs/api#auth" }],
+		"primaryDocumentation": [{ "url": "https://postkey.pro/docs/api" }]
+	}
+}

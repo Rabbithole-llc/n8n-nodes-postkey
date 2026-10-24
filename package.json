@@ -1,0 +1,56 @@
+{
+	"name": "n8n-nodes-postkey",
+	"version": "0.1.0",
+	"description": "Postkey for n8n: schedule posts, run Instagram DM automations, tag contacts, reply in the Inbox, and start workflows from Postkey's events.",
+	"license": "MIT",
+	"homepage": "https://postkey.pro/docs/api",
+	"keywords": [
+		"n8n-community-node-package",
+		"postkey",
+		"instagram",
+		"dm automation",
+		"social media scheduling"
+	],
+	"author": {
+		"name": "Postkey",
+		"email": "team@rabbithole.pro"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Rabbithole-llc/n8n-nodes-postkey.git"
+	},
+	"scripts": {
+		"build": "n8n-node build",
+		"build:watch": "tsc --watch",
+		"dev": "n8n-node dev",
+		"lint": "n8n-node lint",
+		"lint:fix": "n8n-node lint --fix",
+		"test": "n8n-node build && node --test --experimental-strip-types --disable-warning=ExperimentalWarning test/*.test.ts",
+		"release": "n8n-node release",
+		"prepublishOnly": "n8n-node prerelease"
+	},
+	"files": [
+		"dist"
+	],
+	"n8n": {
+		"n8nNodesApiVersion": 1,
+		"strict": true,
+		"credentials": [
+			"dist/credentials/PostkeyApi.credentials.js"
+		],
+		"nodes": [
+			"dist/nodes/Postkey/Postkey.node.js",
+			"dist/nodes/PostkeyTrigger/PostkeyTrigger.node.js"
+		]
+	},
+	"devDependencies": {
+		"@n8n/node-cli": "0.53.4",
+		"eslint": "9.32.0",
+		"prettier": "3.6.2",
+		"release-it": "^21.1.0",
+		"typescript": "5.9.2"
+	},
+	"peerDependencies": {
+		"n8n-workflow": "*"
+	}
+}
