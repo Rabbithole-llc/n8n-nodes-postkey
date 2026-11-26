@@ -1,7 +1,7 @@
 {
 	"name": "n8n-nodes-postkey",
 	"version": "0.1.0",
-	"description": "Postkey for n8n: schedule posts, run Instagram DM automations, tag contacts, reply in the Inbox, and start workflows from Postkey's events.",
+	"description": "Postkey for n8n: schedule posts, run DM automations, edit videos, tag contacts, reply in the Inbox, and start workflows from Postkey's events.",
 	"license": "MIT",
 	"homepage": "https://postkey.pro/docs/api",
 	"keywords": [
@@ -9,6 +9,7 @@
 		"postkey",
 		"instagram",
 		"dm automation",
+		"video editing",
 		"social media scheduling"
 	],
 	"author": {
